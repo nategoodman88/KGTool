@@ -53,6 +53,7 @@ Step 2: Install Node.js and NPM
 This will change per distro. Ubuntu used as example:
 
 Run the following:
+
 sudo apt update
 sudo apt install nodejs
 -Optional: run node -v to check install completed
