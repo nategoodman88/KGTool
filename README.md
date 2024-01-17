@@ -54,11 +54,13 @@ This will change per distro. Ubuntu used as example:
 
 Run the following:
 
+```bash
 sudo apt update
 sudo apt install nodejs
--Optional: run node -v to check install completed
+  #-Optional: run node -v to check install completed
 sudo apt install npm
--Optional: run npm -v to check install completed
+  #-Optional: run npm -v to check install completed
+```
 
 ## Install the dependencies
 
