@@ -37,13 +37,13 @@
 <script>
 import { defineComponent } from "vue";
 
-let vistorCount = 1;
+//let vistorCount = 1; not implementing yet 
 
 export default defineComponent({
   name: "IndexPage",
   setup() {
     return {
-      vistorCount,
+      //vistorCount,
     };
   },
 });
