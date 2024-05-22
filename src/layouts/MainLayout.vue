@@ -8,6 +8,7 @@
           <q-route-tab to="/design2" label="Fixture Design and Build" />
           <q-route-tab to="/shortrun" label="Short Run Production and Repair" />
           <q-route-tab to="/resources" label="Resources" />
+          <q-route-tab to="/contact" label="Contact" />
         </q-tabs>
       </q-header>
       <q-page-container>

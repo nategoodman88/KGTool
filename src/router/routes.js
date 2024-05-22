@@ -20,6 +20,10 @@ const routes = [
         path: "resources",
         component: () => import("pages/ResourcePage.vue"),
       },
+      {
+        path: "contact",
+        component: () => import("pages/ContactPage.vue"),
+      },
     ],
   },
   // Always leave this as last one,

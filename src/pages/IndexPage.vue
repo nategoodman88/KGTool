@@ -29,7 +29,6 @@
       <p class="hours">
         Business Hours Monday Thru Friday 7:00 a.m. to 4:00 p.m.
       </p>
-      <p class="hours">You are vistor number: {{ vistorCount }}</p>
     </div>
   </q-page>
 </template>
@@ -37,14 +36,10 @@
 <script>
 import { defineComponent } from "vue";
 
-//let vistorCount = 1; not implementing yet 
-
 export default defineComponent({
   name: "IndexPage",
   setup() {
-    return {
-      //vistorCount,
-    };
+    return {};
   },
 });
 </script>

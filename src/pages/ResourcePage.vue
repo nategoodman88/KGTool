@@ -130,7 +130,7 @@ p {
 
 .columns-container {
   display: flex;
-  justify-content: space-around; /* Adjust as needed */
+  justify-content: space-around;
 }
 
 .column {
