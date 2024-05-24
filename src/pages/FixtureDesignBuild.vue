@@ -4,41 +4,83 @@
       <h1 class="h1">FIXTURE DESIGN & BUILD</h1>
       <p>
         K&G Tool also offers Fixture Design and Build. Fixture types include
-        Welding, Riveting, Ro- botic End of Arm and others. Design again
+        Welding, Riveting, Robotic End of Arm and others. Design again
         consisting of a Senior and Associate Designer on staff. During the
         Design, our staff Electrical Engineer works from the beginning with the
-        De- signers ensuring the Fixture Electrical/Pneumatic/Safety integration
-        per customer specifica- tions. Once the Design is approved by the
-        customer, drawings are released to the Factory for Fabri- cation. With
+        Designers ensuring the Fixture Electrical/Pneumatic/Safety integration
+        per customer specifications. Once the Design is approved by the
+        customer, drawings are released to the Factory for Fabrication. With
         in-house Wire EDM, CNC Lathe & Mills, and Welding capability fabrication
-        time is minimized.. Typically, 100% of the fabrication is completed
+        time is minimized. Typically, 100% of the fabrication is completed
         in-house reducing delivery times and allowing for direct Project
         Management. With several highly experienced Machinists, Machine
         Assemblers, and our Electrician, your project will receive end-to-end
         direct support from the Design and Electrical Engineers from Design to
         Delivery. Once the Fixture is assembled and rigorously tested, we
         deliver to your agreed to delivery while exceeding your quality
-        expectations
+        expectations.
       </p>
       <p>
         Please contact us and allow us to demonstrate to you the K&G Tool
         advantage.
       </p>
     </div>
-    <div>
-      <img src="~assets/Picture4.png" alt="" />
-      <img src="~assets/Picture5.png" alt="" />
+    <div class="image-container">
+      <img
+        src="~assets/Picture4.png"
+        alt="Picture 4"
+        class="responsive-image"
+      />
+      <img
+        src="~assets/Picture5.png"
+        alt="Picture 5"
+        class="responsive-image"
+      />
     </div>
   </q-page>
 </template>
+
+<script>
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "FixtureDesignPage",
+  setup() {
+    return {};
+  },
+});
+</script>
+
 <style>
 .h1 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 16px;
 }
+
 p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.image-container {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 </style>

@@ -6,13 +6,13 @@
         In today’s fast-paced changing manufacturing environment, Automation,
         Robotic, Welding, and Assemble machines are a key element to remaining
         efficient and competitive. With timing and funding paramount, developing
-        new part designs and manufacturing processes present chal- lenges. The
+        new part designs and manufacturing processes present challenges. The
         staff of K&G Tool has been providing innovative solutions to these
         challenges for 30+ years in the Automotive, Food Processing, and
         Furniture industries. This assures your competitiveness while minimizing
         the associated expenses. With considerable experience in the Robotic,
         Welding, and Assemble machines, and supported by In-House Design and
-        Electri- cal, Wire EMD, CNC Lathe and Mill capability, K&G Tool can
+        Electrical, Wire EMD, CNC Lathe and Mill capability, K&G Tool can
         deliver a solution to meet your Manufacturing Challenge.
       </p>
       <p>
@@ -20,11 +20,11 @@
         advantage.
       </p>
     </div>
-    <div>
+    <div class="image-container">
       <img
         src="~assets/k-g_building.jpg"
         alt="KGBuilding"
-        style="width: 640px; height: 480px"
+        class="responsive-image"
       />
       <p class="hours">
         Business Hours Monday Thru Friday 7:00 a.m. to 4:00 p.m.
@@ -50,11 +50,34 @@ export default defineComponent({
   font-weight: bold;
   margin-bottom: 16px;
 }
+
 p {
   font-size: 18px;
   line-height: 1.6;
 }
+
 .hours {
   text-align: center;
+}
+
+.image-container {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 </style>
