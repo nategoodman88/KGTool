@@ -1,7 +1,9 @@
 <template>
   <q-page class="q-pa-md flex flex-center">
     <div class="text-center">
-      <h1 class="h1">DESIGNERS & BUILDERS OF AUTOMATION EQUIPMENT</h1>
+      <h1 class="h1">
+        DESIGNERS & BUILDERS OF AUTOMATION EQUIPMENT AND SHORT RUN PRODUCTION
+      </h1>
       <p>
         In today’s fast-paced changing manufacturing environment, Automation,
         Robotic, Welding, and Assemble machines are a key element to remaining
