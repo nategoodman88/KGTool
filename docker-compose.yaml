@@ -1,0 +1,15 @@
+services:
+  node:
+    build:
+      dockerfile: docker/node/Dockerfile
+      context: .
+      args:
+        - UID=${UID}
+    restart: unless-stopped
+    user: ${UID}:${UID}
+    ports:
+      - ${HOST_PORT:-8080}:8080
+    entrypoint: npm
+    command: run dev
+    volumes:
+      - ./:/home/node/app
