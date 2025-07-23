@@ -1,6 +1,9 @@
 # K & G Tool Co
 
-Marketing website for KG Tool with local docker environment for development
+Marketing website for K & G Tool Co, with:
+
+- local docker environment for development (production is utilizing S3 and Cloudfront)
+- infrastructure management via OpenTofu
 
 ## Getting Started
 
