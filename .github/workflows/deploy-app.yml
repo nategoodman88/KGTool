@@ -24,6 +24,12 @@ jobs:
       - name: build
         run: npm run build
 
+      - name: upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact
+          path: dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -32,7 +38,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name: deploy to S3
+      - name: download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact
+          path: ./dist
+
+      - name: deploy
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --delete
