@@ -32,44 +32,12 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "ShortRunProductionPage",
+  name: 'ShortRunProdRepair',
   setup() {
-    return {};
+    return {}
   },
-});
+})
 </script>
-
-<style>
-.h1,
-.h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.responsive-image {
-  width: 100%;
-  max-width: 640px;
-  height: auto;
-  margin: 16px 0;
-}
-
-@media (max-width: 768px) {
-  .h1,
-  .h2 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-</style>

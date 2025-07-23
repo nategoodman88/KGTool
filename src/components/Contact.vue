@@ -10,20 +10,13 @@
     </div>
   </q-page>
 </template>
-<style>
-.h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-.bottomDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-</style>
+<script>
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'Contact',
+  setup() {
+    return {}
+  },
+})
+</script>
