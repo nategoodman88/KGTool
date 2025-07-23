@@ -1,0 +1,38 @@
+name: infrastructure-deploy
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'infrastructure/**'
+  workflow_dispatch:
+
+jobs:
+  infrastructure-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: install OpenTofu CLI
+        run: |
+          curl -fsSL https://github.com/opentofu/opentofu/releases/latest/download/opentofu-linux-amd64 -o /usr/local/bin/tofu
+          chmod +x /usr/local/bin/tofu
+          tofu version
+
+      - name: infrastructure init
+        run: tofu init
+
+      - name: infrastructure plan
+        run: tofu plan
+
+      - name: infrastructure apply
+        if: github.event_name == 'workflow_dispatch'
+        run: tofu apply -auto-approve
