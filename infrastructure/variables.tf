@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_s3_terraform_state_bucket" {
   type    = string
-  default = "kgtool-terraform-state-prod"
+  default = "tf-states-730335427928-us-east-2-an"
 }
 
 variable "aws_s3_terraform_state_bucket_key" {
