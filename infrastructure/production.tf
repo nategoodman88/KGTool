@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = var.aws_s3_terraform_state_bucket
+  bucket = "tf-states-730335427928-us-east-2-an"
 
   lifecycle {
     prevent_destroy = true
